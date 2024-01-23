@@ -1,0 +1,13 @@
+public void captureScreenshot(){
+   try
+   {
+   TakesScreenshot sc=(TakesScreenshot)driver;
+   File source=sc.getScreenshotAs(OutputType.FILE);
+   FileUtils.copy(source, new File("path of the file));
+   }
+   catch(Exception e)
+   {
+   e.stackTrace();
+   }
+    
+}
