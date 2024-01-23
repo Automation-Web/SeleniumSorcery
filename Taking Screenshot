@@ -7,7 +7,7 @@ public void captureScreenshot(){
    }
    catch(Exception e)
    {
-   e.stackTrace();
+       System.out.println(e.getMassage());
    }
     
 }
